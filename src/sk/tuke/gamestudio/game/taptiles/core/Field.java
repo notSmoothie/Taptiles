@@ -98,7 +98,8 @@ public class Field {
 
     public boolean CheckConnect(Point p1, Point p2) {
 
-        if (p1 == p2) return false;
+
+        if (p1.getX() == p2.getX() && p1.getY() == p2.getY()) return false;
 
         if (PointIsOutside(p1) || PointIsOutside(p2))
             throw new ArrayIndexOutOfBoundsException();
