@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Minesweeper</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script src="http://localhost:35729/livereload.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<h1>Welcome to <a href="/">Gamestudio</a>!</h1>
+<h1>NotReally</h1>
+
+<a href="/taptiles/new">New game</a><br/>
+
+<div th:text="${@taptilesController.gameState}"/>
+<div th:utext="${@taptilesController.htmlField}"/>
+<p>"Hello"</p>
+
+
+</body>
+</html>

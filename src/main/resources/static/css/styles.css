@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+}
+
+.container .row {
+    display: block;
+}
+
+.container .column {
+    display: block;
+}
