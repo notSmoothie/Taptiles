@@ -98,6 +98,7 @@ public class TaptilesController {
             }
             sb.append("</div>\n");
         }
+
         sb.append("</div>\n");
 
         return sb.toString();
