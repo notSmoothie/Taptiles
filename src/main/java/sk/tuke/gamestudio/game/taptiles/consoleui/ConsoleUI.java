@@ -412,6 +412,7 @@ public class ConsoleUI {
                 field = new Field(4, 4);
                 ConsoleUI ui = new ConsoleUI(field);
                 play();
+
                 return;
 
             } else if ("N".equals(input)) {
