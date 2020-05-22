@@ -102,6 +102,12 @@ public class ConsoleUI {
             System.out.println(ANSI_YELLOW + "Enter input " + ANSI_RESET + "(e.g. A1, E(" + ANSI_CYAN + "X" + ANSI_RESET + ")it, (" + ANSI_CYAN + "R" + ANSI_RESET + ")estart, (" + ANSI_CYAN + "U" + ANSI_RESET + ")ndo): ");
             String input = new Scanner(System.in).nextLine().trim().toUpperCase();
 
+            if ("H".equals(input)) {
+                field.checkConnects(highlightedPoint.getX(), highlightedPoint.getY(), true);
+                break;
+            }
+
+
             if ("X".equals(input))
                 System.exit(0);
 
@@ -131,6 +137,7 @@ public class ConsoleUI {
 
             Matcher matcher = INPUT_PATTERN.matcher(input);
             if (matcher.matches()) {
+                field.unHint();
                 try {
                     int x = matcher.group(1).charAt(0) - 'A';
                     int y = Integer.parseInt(matcher.group(2)) - 1;
@@ -144,7 +151,7 @@ public class ConsoleUI {
                             if (field.getTile(highlightedPoint).getState() == TileState.REMOVED) {
                                 highlightedPoint = null;
                             } else {
-                                if (field.getTile(highlightedPoint).getState() == TileState.GROUND)
+                                if (field.getTile(highlightedPoint).getState() == TileState.GROUND || field.getTile(highlightedPoint).getState() == TileState.GROUND)
                                     field.getTile(highlightedPoint).setState(TileState.EXCITED);
                             }
                         } else {
@@ -207,6 +214,9 @@ public class ConsoleUI {
                 break;
             case EXCITED:
                 System.out.print(RED_BOLD_BRIGHT + Character.toUpperCase(t.getSymbol()) + ANSI_RESET + "|");
+                break;
+            case HINTED:
+                System.out.print(ANSI_GREEN + Character.toUpperCase(t.getSymbol()) + ANSI_RESET + "|");
                 break;
             case REMOVED:
                 System.out.print(" |");

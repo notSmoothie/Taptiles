@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Minesweeper</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <script src="http://localhost:35729/livereload.js"></script>
+</head>
+<body>
+
+<div class="container" style="flex-direction: column">
+    <h2 style="font-size: 3vw">HALL OF FAME</h2>
+    <ol style="font-size: 2vw; padding: 2vw; text-align: center">
+        <li th:each="score : ${scores}">
+            <span th:text="${score.player}"/>
+            <span th:text="${score.points}"/>
+        </li>
+    </ol>
+
+    <div style="width: 10vh;margin-top: 10vh" class="radial-gradient">
+        <a style="background: none" href="/taptiles/menu">
+            <img style="width: 5vh;" src="/images/taptiles/homeicon.png">
+        </a>
+    </div>
+</div>
+
+
+</body>
+</html>

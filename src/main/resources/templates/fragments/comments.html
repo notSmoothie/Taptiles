@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <head>
+        <title>Minesweeper</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <link rel="stylesheet" href="/css/styles.css"/>
+        <script src="http://localhost:35729/livereload.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+    </head>
+</head>
+<body>
+
+<div class="commentContainer" th:fragment="commentBox">
+    <p style="font-size: 2vh; font-weight: bold; text-align: center ">Comments:</p>
+    <div class="comment" th:each="comment : ${comments}">
+        <div class="commentName" th:text="${comment.player}"><b></b></div>
+        <div class="commentContent" th:text="${comment.comment}"></div>
+    </div>
+    <form action="/taptiles/addComment" method="get">
+        <input class="comment" style="font-size: 1vw; margin-top: 1vh; width: 11vw" type="text" name="comment"/></p>
+    </form>
+</div>
+
+</body>
+</html>

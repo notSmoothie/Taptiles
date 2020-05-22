@@ -26,7 +26,7 @@ public class CommentServiceJDBC implements CommentService {
             "INSERT INTO comment (game, player, comment, commentedon) VALUES (?, ?, ?, ?)";
 
     public static final String SELECT_COMMENT =
-            "SELECT game, player, comment, commentedon FROM comment WHERE game = ? ORDER BY commentedon";
+            "SELECT game, player, comment, commentedon FROM comment WHERE game = ? ORDER BY commentedon DESC";
 
 
     @Override

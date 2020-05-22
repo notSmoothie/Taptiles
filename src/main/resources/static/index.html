@@ -7,25 +7,24 @@
     <script src="http://localhost:35729/livereload.js"></script>
 </head>
 <body>
-<h1>Welcome to Gamestudio!</h1>
+<a style="z-index: 1; width: auto; height: auto" class="indexGradient" href="/taptiles/player">
+    <img class="indexImg" src="/images/taptiles/TAPTILES.png"></img>
+</a>
 
-<div th:if="${@userController.logged}">
-    You are logged as <span th:text="${@userController.loggedUser}"/>.
-    <a href="/user/logout">Logout</a>
+<div class="waveWrapper waveAnimation">
+
+    <div class="waveWrapperInner bgTop">
+        <div class="wave waveTop" style="background-image: url('/images/taptiles/waves/wave-top.png')"></div>
+    </div>
+    <div class="waveWrapperInner bgMiddle">
+        <div class="wave waveMiddle" style="background-image: url('/images/taptiles/waves/wave-mid.png')"></div>
+    </div>
+    <div class="waveWrapperInner bgBottom">
+        <div class="wave waveBottom" style="background-image: url('/images/taptiles/waves/wave-bot.png')"></div>
+    </div>
+
 </div>
 
-<div th:if="${not @userController.logged}">
-    <form method="get" action="/user/login">
-        Login: <input name="login" type="text"/>
-        <input type="submit" value="Login">
-    </form>
-</div>
-
-<div>
-    Our favorite game:
-    <ul>
-        <li><a href="/taptiles">Minesweeper</a></li>
-    </ul>
 </div>
 </body>
 </html>

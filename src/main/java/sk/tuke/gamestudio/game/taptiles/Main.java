@@ -5,7 +5,7 @@ import sk.tuke.gamestudio.game.taptiles.core.Field;
 
 public class Main {
     public static void main(String[] args) {
-        Field field = new Field(4, 4);
+        Field field = new Field(6, 6);
         ConsoleUI ui = new ConsoleUI(field);
         ui.play();
     }

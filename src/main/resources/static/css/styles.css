@@ -1,11 +1,404 @@
+
 .container {
     display: flex;
+    font-weight: normal;
+    justify-content: center;
+    align-items: center;
+    margin: 2vw;
 }
 
 .container .row {
     display: block;
 }
 
+span {
+    font-family: Lato;
+}
+
+* {
+    font-family: Lato;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
 .container .column {
     display: block;
+}
+
+.container-menu > a a:hover a:visited a:link a:active {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    background: inherit;
+}
+
+input {
+    -webkit-appearance: none;
+    box-shadow: none !important;
+    outline: none;
+    text-align: center;
+}
+
+.container-menu {
+    z-index: 1;
+    font-weight: bold;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-menu div {
+    margin: 2vh;
+}
+
+.container a, a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+    color: black;
+    background: inherit;
+}
+
+body {
+    background: url(https://newevolutiondesigns.com/images/freebies/texture-wallpaper-31.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 98vh;
+    width: 98vw;
+}
+
+.radial-gradient:hover {
+    opacity: 100%;
+}
+
+.radial-gradient {
+    opacity: 60%;
+    display: flex;
+    width: 10vw;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato';
+    margin: 0.5vh;
+    font-size: 3vw;
+    box-shadow: 0 0 0.2rem 0 rgba(0, 0, 0, .4);
+    border-radius: 7px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+    transition: opacity 1s ease-in-out;
+}
+
+.radial-gradient-removed {
+    opacity: 0%;
+    display: flex;
+    width: 10vw;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato';
+    margin: 0.5vh;
+    font-size: 3vw;
+    box-shadow: 0 0 0.2rem 0 rgba(0, 0, 0, .4);
+    border-radius: 7px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+}
+
+.comment {
+    padding-left: 2px;
+    box-shadow: 0 0 0.2rem 0 rgba(0, 0, 0, .4);
+    margin: 1vw;
+}
+
+.commentContent {
+    font-size: 0.8vw;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.commentName {
+    font-size: 1vw;
+    width: 7vw;
+    margin-bottom: 0.55vh;
+    font-weight: bolder;
+}
+
+.commentContainer {
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato';
+    width: 12vw;
+}
+
+.radial-gradient:hover {
+    opacity: 100%;
+}
+
+.comment {
+    opacity: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    font-family: 'Lato';
+    margin: 0.5vh;
+    font-size: 2vw;
+    box-shadow: 0 0 0.2rem 0 rgba(0, 0, 0, .4);
+    border-radius: 7px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+    transition: opacity 1s ease-in-out;
+}
+
+.comment:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(20px);
+    margin: -20px;
+    transition: opacity 2s;
+}
+
+
+.radial-gradient-excited {
+    opacity: 80%;
+    display: flex;
+    width: 10vw;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato';
+    margin: 0.5vh;
+    font-size: 3vw;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, .3);
+    border-radius: 7px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+    transition: opacity 1s ease-in-out;
+}
+
+.radial-gradient-excited:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(20px);
+    margin: -20px;
+    transition: opacity 2s;
+}
+
+.radial-gradient-hinted {
+    opacity: 80%;
+    display: flex;
+    width: 10vw;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato';
+    margin: 0.5vh;
+    font-size: 3vw;
+    box-shadow: inset 0 0 10px rgba(0, 255, 0, .6);
+    border-radius: 7px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+    transition: opacity 1s ease-in-out;
+}
+
+.radial-gradient-hinted:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(20px);
+    margin: -20px;
+    transition: opacity 2s;
+}
+
+.radial-gradient:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(20px);
+    margin: -20px;
+    transition: opacity 2s;
+}
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    background: url(https://newevolutiondesigns.com/images/freebies/texture-wallpaper-31.jpg) no-repeat;
+}
+
+.bgTop {
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.bgMiddle {
+    z-index: -2;
+    opacity: 0.75;
+}
+
+.bgBottom {
+    z-index: -3;
+}
+
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+
+.waveTop {
+    background-size: 50% 100px;
+}
+
+.waveAnimation .waveTop {
+    animation: move_wave 6s;
+    -webkit-animation: move-wave 6s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.waveMiddle {
+    background-size: 50% 120px;
+}
+
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+
+.waveBottom {
+    background-size: 50% 100px;
+}
+
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
+
+@keyframes menusize {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes menusize1 {
+    from {
+        opacity: 0;
+        width: 0px
+    }
+    to {
+        opacity: 100%;
+        width: 20vw
+    }
+}
+
+.indexGradient {
+    animation-name: menusize;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+    animation-delay: 0.3s;
+    opacity: 0;
+    box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, .4);
+    border-radius: 7px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+}
+
+.indexGradient:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 600px rgba(255, 255, 255, .6);
+    filter: blur(1px);
+    margin: -20px;
+}
+
+
+.indexImg {
+    background: none;
+    opacity: 0;
+    width: 0;
+    animation-name: menusize1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
 }

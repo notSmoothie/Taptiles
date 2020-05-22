@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Taptiles</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="/css/styles.css"/>
+    <script src="http://localhost:35729/livereload.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container-menu">
+    <a href="/taptiles/new?difficulty=easy">
+        <div style=" width: 30vw" class="radial-gradient">EASY</div>
+    </a>
+    <a href="/taptiles/new?difficulty=medium">
+        <div style=" width: 30vw" class="radial-gradient">MEDIUM</div>
+    </a>
+    <a href="/taptiles/new?difficulty=hard">
+        <div style="width: 30vw" class="radial-gradient">HARD</div>
+    </a>
+</div>
+
+
+<script>
+    $(":focus,.radial-gradient").mousemove(function (event) {
+        var x = event.pageX - ($(this).offset().left);
+        var y = event.pageY - ($(this).offset().top);
+
+        $(this).css('box-shadow', 'inset 0 0 2000px rgba(255, 255, 255, .6)');
+    }).mouseleave(function () {
+        $(this).css('box-shadow', '0 0 0.2rem 0 rgba(0, 0, 0, .4)');
+    });
+</script>
+
+
+</body>
+</html>
