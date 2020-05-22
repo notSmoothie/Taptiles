@@ -19,7 +19,8 @@
         <div class="commentContent" th:text="${comment.comment}"></div>
     </div>
     <form action="/taptiles/addComment" method="get">
-        <input class="comment" style="font-size: 1vw; margin-top: 1vh; width: 11vw" type="text" name="comment"/></p>
+        <input autocomplete="off" class="comment" style="font-size: 1vw; margin-top: 1vh; width: 11vw" type="text"
+               name="comment"/></p>
     </form>
 </div>
 
