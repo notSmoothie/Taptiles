@@ -44,7 +44,7 @@ public class Field {
                 }
             }
         }
-        if (lost == true) {
+        if (lost == true && this.gameState != GameState.WON) {
             this.gameState = GameState.LOST;
         }
     }

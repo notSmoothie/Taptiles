@@ -23,7 +23,7 @@ public class Score implements Comparable<Score>, Serializable {
 
     public Score(String game, String player, int points, Date playedon) {
         this.game = game;
-        this.player = "Martin";
+        this.player = player;
         this.points = points;
         this.playedon = playedon;
     }
