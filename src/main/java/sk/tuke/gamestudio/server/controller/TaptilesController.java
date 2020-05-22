@@ -26,8 +26,6 @@ public class TaptilesController {
     @Autowired
     private CommentService commentService;
 
-    @Autowired
-
     private Field field;
 
     private String playerName;
